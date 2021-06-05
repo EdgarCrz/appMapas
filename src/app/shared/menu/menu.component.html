@@ -1,0 +1,11 @@
+<ul class="list-group">
+  <li
+    *ngFor="let item of menuItems"
+    [routerLink]="[item.ruta]"
+    routerLinkActive="active"
+    class="list-group-item"
+  >
+    <!--  creamos varias veces esta etiqueda segun los valores que tenga la propiedad "menuItems"-->
+    {{ item.nombre }}
+  </li>
+</ul>

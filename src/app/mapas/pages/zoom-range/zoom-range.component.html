@@ -1,0 +1,27 @@
+<div #mapa class="mapa-container"></div>
+<!-- se usa #mapa para usar referencia local, ya que si quieramos teer varios mapas no se podria ya que tendriamos que usar muchos id y repetir el codigo  en el ts -->
+<div id="zoom" class="row">
+  <div class="col-12">
+    <label class="form-label"
+      >Zoom: {{ zoomLavel | number: "2.0-2" }} - Lng,Lat: [{{
+        center[0] | number: "2.4-4"
+      }},{{ center[1] | number: "2.4-4" }}]</label
+    >
+    <input
+      type="range"
+      class="form-range"
+      [value]="zoomLavel"
+      min="0"
+      max="18"
+      (input)="zoomCambio(zoomInput.value)"
+      #zoomInput
+    />
+    <!-- declaramos valores minimos y maximos, establecemos que el valor va a ser igual a la propiedad[] zoomlavel -->
+    <!-- escuchamos el evento () input y ejecutamos el metodo zoomCambio y mandamos el valor del zoomInput -->
+    <!-- antes de todo declaramos referencia local #zoomInput -->
+  </div>
+  <div class="col-12">
+    <button class="btn btn-primary" (click)="zoomOut()">-</button>
+    <button class="btn btn-primary float-end" (click)="zoomIn()">+</button>
+  </div>
+</div>

@@ -1,27 +1,23 @@
-# MapasApp
+Este es un breve listado de los temas fundamentales:
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.1.2.
+Manejo de librerías escritas en JavaScript en TypeScript
 
-## Development server
+Uso de Mapas basados en Mapbox (el API es similar a la de Google Maps)
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Marcadores
 
-## Code scaffolding
+Eventos
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+FlyTo
 
-## Build
+Coordenadas geográficas
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+Componentes para re-utilización de mapas
 
-## Running unit tests
+Mantener objetos de forma persistente
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+@types
 
-## Running end-to-end tests
+Zoom
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+Range
